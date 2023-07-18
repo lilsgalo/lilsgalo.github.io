@@ -2,6 +2,9 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  max-width: 1360px;
+  margin: 0 auto;
+  background: #cfcfcf;
 }
 
 header {
@@ -12,6 +15,7 @@ header {
 
 header h1 {
   margin: 0;
+  padding-top: 11px;
 }
 
 nav {
@@ -40,13 +44,19 @@ section {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
+}
+
+input {
+  padding: 10px;border: 1px solid #d3d3d3;border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #d3d3d3;border-radius: 4px;
 }
 
 /******************************************/
@@ -54,6 +64,7 @@ footer {
 .container {
   display: block;
   margin: auto;
+  background: white;
 }
 
 .container-menu {
@@ -72,23 +83,23 @@ footer {
 }
 
 #profile {
-  width: 3vw;
-  height: 6vh;
-  border-radius: 30%;
+  border-radius: 50%;
+  max-width: 60px;
 }
 
 .btn-submit {
-  border-radius: 30%;
+  border-radius: 20px;
   font-size: 16px;
-  background-color: darkcyan;
-  border: none;
-  color: #000;
-  padding: 15px 15px;
+  background-color: #404f4f;
+  border: 0px;
+  color: white;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .btn-submit:hover {
@@ -98,4 +109,16 @@ footer {
 p > a {
   text-decoration: none;
   color: darkcyan;
+}
+
+.outer-div-footer {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.inner-div-footer {
+  padding: 20px;
 }
